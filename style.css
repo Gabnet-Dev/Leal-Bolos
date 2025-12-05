@@ -1,0 +1,395 @@
+/* ---------------------- ZERANDO BODY ---------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff5ec;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ---------------------- HEADER ---------------------- */
+header {
+    background-color: rgb(46, 22, 0);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.logo {
+    height: 80px;
+    position: absolute;
+    left: 20px;
+}
+
+.carrinho {
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: rgb(70, 35, 5);
+}
+
+/* ---------------------- MAIN ---------------------- */
+
+main {
+
+    padding: 120px 20px 40px 20px;
+    min-height: 100vh;
+}
+
+/* ---------------------- CATALOGO ---------------------- */
+.catalogo h1 {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(46, 22, 0);
+    margin-bottom: 30px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.produto-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s    ;
+}
+
+.produto-card h3 {
+    margin: 15px 0 8px;
+    color: rgb(46, 22, 0);
+    font-size: 22px;
+}
+
+.desc {
+    color: #6a4e3b;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(46, 22, 0);
+    margin-bottom: 12px;
+}
+
+.comprar, .botao-comprar {
+    background-color: rgb(46, 22, 0);
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.comprar:hover, .botao-comprar:hover {
+    background-color: rgb(70, 35, 5);
+}
+
+/* ---------------------- DETALHES ---------------------- */
+.detalhes-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.detalhes-imagem img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.detalhes-info {
+    max-width: 400px;
+}
+
+.detalhes-info h1 {
+    font-size: 28px;
+}
+
+.descricao {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.preco {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ---------------------- OUTROS PRODUTOS ---------------------- */
+.outros-produtos {
+    padding: 40px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.outros-produtos h2 {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(46, 22, 0);
+    margin-bottom: 30px;
+}
+
+.produto-grid-detalhes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.produto-card-detalhes {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 8  px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.produto-card-detalhes:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
+.produto-card-detalhes img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card-detalhes h3 {
+    margin: 10px 0 5px;
+    color: rgb(46, 22, 0);
+}
+
+.produto-card-detalhes .preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(46, 22, 0);
+    margin-bottom: 10px;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+footer {
+    margin-top: 0;
+    background-color: rgb(46, 22, 0);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(46, 22, 0);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffbb00;
+}
+
+/* ---------------------- CONTATO ---------------------- */
+
+.contato-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contato-container h1 {
+    font-size: 32px;
+    color: rgb(46, 22, 0);
+    margin-bottom: 20px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.form-contato label {
+    text-align: left;
+    font-weight: bold;
+    color: rgb(46, 22, 0);
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-contato button {
+    width: 150px;
+    align-self: center;
+}
+
+.contato-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: rgb(46, 22, 0);
+}
+
+/* Banner no topo do catálogo */
+.banner-home {
+    text-align: center;
+    margin: 0 auto 30px;    /* margem embaixo para separar do catálogo */
+    max-width: 1200px;
+    padding: 10px 20px;
+}
+
+.banner-home h1 {
+    color: rgb(46, 22, 0);
+    font-size: 40px;
+    margin: 10px 0 6px;
+}
+
+.banner-home p {
+    color: #6a4e3b;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* -------------------- SEÇÃO QUEM SOMOS -------------------- */
+.sobre-nos {
+    background: linear-gradient(90deg, #fff5ec 0%, #ffe0c2 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 95%;
+    
+    /* 🔥 Isso resolve os 2 problemas */
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+
+/* força largura do bloco de texto para não empurrar a imagem pra fora */
+.sobre-texto {
+    flex: 1 1 55%;               /* ocupa até ~55% do espaço */
+    max-width: 720px;
+    order: 1;
+}
+
+/* texto */
+.sobre-texto h2 {
+    margin-left: 300px;
+    font-size: 2.4rem;
+    color: rgb(46, 22, 0);
+    margin-bottom: 15px;
+}
+
+.sobre-texto p {
+    margin-left: 300px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #4b2f1b;
+    font-weight: 500;
+}
+
+/* imagem posicionada no canto direito */
+.sobre-img {
+    flex: 0 0 380px;             /* largura fixa para a imagem (não cresce) */
+    order: 2;
+    margin-left: 5px;
+    margin-right: 100px;
+    display: flex;
+    align-items: flex-start;     /* fixa a imagem no topo da seção (canto superior direito) */
+    justify-content: flex-end;
+}
+
+.sobre-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+
+
+
