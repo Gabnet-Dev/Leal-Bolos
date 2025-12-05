@@ -312,11 +312,10 @@ footer {
     margin: 5px 0;
     color: rgb(46, 22, 0);
 }
-
-/* Banner no topo do catálogo */
+/* -------------------- BANNER HOME -------------------- */
 .banner-home {
     text-align: center;
-    margin: 0 auto 30px;    /* margem embaixo para separar do catálogo */
+    margin: 0 auto 30px;
     max-width: 1200px;
     padding: 10px 20px;
 }
@@ -342,20 +341,17 @@ footer {
     padding: 50px;
     width: 95%;
     
-    /* 🔥 Isso resolve os 2 problemas */
     margin-top: 40px;
     margin-bottom: 0;
 }
 
 
-/* força largura do bloco de texto para não empurrar a imagem pra fora */
 .sobre-texto {
-    flex: 1 1 55%;               /* ocupa até ~55% do espaço */
+    flex: 1 1 55%;
     max-width: 720px;
     order: 1;
 }
 
-/* texto */
 .sobre-texto h2 {
     margin-left: 300px;
     font-size: 2.4rem;
@@ -371,14 +367,13 @@ footer {
     font-weight: 500;
 }
 
-/* imagem posicionada no canto direito */
 .sobre-img {
-    flex: 0 0 380px;             /* largura fixa para a imagem (não cresce) */
+    flex: 0 0 380px;
     order: 2;
     margin-left: 5px;
     margin-right: 100px;
     display: flex;
-    align-items: flex-start;     /* fixa a imagem no topo da seção (canto superior direito) */
+    align-items: flex-start;
     justify-content: flex-end;
 }
 
@@ -389,7 +384,3 @@ footer {
     object-fit: cover;
     box-shadow: 0 4px 14px rgba(0,0,0,0.25);
 }
-
-
-
-
